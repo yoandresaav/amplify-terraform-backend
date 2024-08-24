@@ -453,6 +453,7 @@ resource "aws_api_gateway_deployment" "S3APIDeployment" {
     aws_api_gateway_integration.s3_integration,
     aws_api_gateway_integration.list_s3_integration,
     aws_api_gateway_integration.post_s3_integration,
+    aws_api_gateway_integration.assembly_integration,
   ]
   rest_api_id = aws_api_gateway_rest_api.upload_api.id
   stage_name  = "prod"
